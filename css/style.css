@@ -83,7 +83,7 @@ img {
 
 /*800px 미만시, h1의 하단선 제거, ol의 오른쪽 선 제거, 
   grid->block, block은 공간침투 불가능! > 한 요소는 한 행만 차지*/
-@media(max-width :800px) {
+@media(max-width :1450px) {
     #grid {
         display: block;
     }
