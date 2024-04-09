@@ -1,94 +1,99 @@
 #test {
     color: blueviolet;
-  }
-  
-  #picture {
+}
+
+#picture {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr;
     /* 그리드 내부에서의 행, 열에 여백 주기.  */
     column-gap: 20px;
     row-gap: 20px;
-  }
-  .picture_container {
-    border: 5px pink dotted ;
-  }
-  
-  #grid {
+}
+
+.picture_container {
+    border: 5px pink dotted;
+}
+
+#grid {
     display: grid;
     grid-template-columns: 150px 1fr;
-  }
-  
-  #grid ol{
+}
+
+#grid ol {
     padding-left: 25px;
-  }
-  
-  ol {
+}
+
+ol {
     border-right: 1px solid gray;
     width: 100px;
     margin: 0;
     padding: 20px;
     /* display: inline-block; */
-  }
-  
-  body{
+}
+
+body {
     margin: 0;
-  }
-  
-  h1 {
+}
+
+h1 {
     color: blue;
     font-size: 45px;
     text-align: center;
     border-bottom: 1px gray solid;
-    margin:0;
+    margin: 0;
     display: block;
-  }
-  
-  a {
+}
+
+a {
     color: black;
     text-decoration: none;
-  }
-  #article{
+}
+
+#article {
     padding-left: 20px;
-  }
-  #active {
+}
+
+#active {
     color: red;
-  }
-  
-  .saw {
+}
+
+.saw {
     color: blueviolet;
-  }
-  
-  /* 3x3 사진첩 꾸미기 */
-  #picture {
+}
+
+/* 3x3 사진첩 꾸미기 */
+#picture {
     display: grid;
     /* grid-template-columns: 1fr 1fr 1fr; */
     grid-template-columns: repeat(3, 1fr);
     /* 그리드 내부에서의 행, 열에 여백 주기.  */
     column-gap: 20px;
     row-gap: 20px;
-  }
-  
-  img {
+}
+
+img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  
-  .picture_container {
-    border: 5px pink dotted ;
-  }
-  
-  /*800px 미만시, h1의 하단선 제거, ol의 오른쪽 선 제거, 
+}
+
+.picture_container {
+    border: 5px pink dotted;
+}
+
+/*800px 미만시, h1의 하단선 제거, ol의 오른쪽 선 제거, 
   grid->block, block은 공간침투 불가능! > 한 요소는 한 행만 차지*/
-  @media(max-width :800px){
+@media(max-width :800px) {
     #grid {
         display: block;
     }
+
     #grid ol {
         border-right: none;
     }
+
     h1 {
         border-bottom: none;
     }
-  
-  }
+
+}
