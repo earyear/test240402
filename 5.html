@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<!-- document 객체 속, write 함수는 html 문서에 출력을 담당하는 기능! -->
+
+<body>
+    <h1><a href="index.html">WEB</a></h1>
+    <script>
+        document.write("<h1>오늘 점심 뭐먹지?</h1>");
+        document.write("<h2>오늘 메뉴는 마라탕!</h2>");
+        document.write(1 + 1 + "<br>");
+        document.write("1+1");
+    </script>
+    <br>
+    <input type="button" value="alertTest" onclick="alert('alertTest중임다')">
+
+    <input type="button" value="confirmTest" onclick="
+         if (window.confirm('Do you really want to leave?')) {
+            alert('밥먹음');
+        }
+        else {
+            window.alert('hehe');
+        }
+    ">
+
+    <input type="text" value="onchangeTest" onchange="alert('changed')"><br>
+
+    <input id=keys type="text" onkeydown="alert('key down')">
+    <input type="button" value="clear" onclick="
+        keys.value=null;
+    ">
+    <!-- <script>
+        if (window.confirm("Do you really want to leave?")) {
+            alert('밥먹음');
+        }
+        else {
+            window.alert('hehe');
+        }
+    </script> -->
+</body>
+
+</html>
