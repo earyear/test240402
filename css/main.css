@@ -1,5 +1,4 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -18,7 +17,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-left: 30px;
 }
 
 nav ul li a {
@@ -26,17 +25,47 @@ nav ul li a {
     text-decoration: none;
 }
 
-.hero {
+.welcome {
     text-align: center;
-    padding: 100px 0;
+    padding: 80px 0;
     background-color: #f4f4f4;
 }
 
-.hero h1 {
+.welcome h1 {
     font-size: 3em;
     margin-bottom: 20px;
 }
+/* 
+div{
+    text-align: center;
+} */
+/* 
+img{
+    width: 60%;
+    margin: auto;
+    display: block;
+} */
 
+#slider{
+    overflow: hidden;
+    position: relative; 
+    width:100%;
+    /* height: a; */
+    box-sizing: border-box;
+}
+.image-box{
+    display: flex;
+    flex-wrap: nowrap;
+    animation: bannermove 20s linear infinite;
+}
+@keyframes bannermove{
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(-80%);
+    }
+}
 .features {
     padding: 50px 0;
     text-align: center;
@@ -57,9 +86,17 @@ nav ul li a {
     margin-bottom: 10px;
 }
 
-.footer {
+footer {
+    bottom: 0;
     text-align: center;
     padding: 20px 0;
     background-color: #333;
     color: #fff;
+    position: relative;
+}
+
+.jua-regular {
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
