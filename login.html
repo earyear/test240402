@@ -5,21 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>홀드락</title>
-    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
 </head>
 
-<body  class="jua-regular">
+<body class="jua-regular">
     <header>
         <nav>
             <ul>
                 <li><a href="index.html">홈</a></li>
                 <li><a href="login.html">스토어</a></li>
                 <li><a href="#">커뮤니티</a></li>
-                <li><a href="#">가이드</a></li>
+                <li><a href="policy.html">가이드</a></li>
                 <li><a href="login.html">로그인</a></li>
             </ul>
         </nav>
@@ -27,18 +26,21 @@
 
     <div class="login-container">
         <h2>LOGIN</h2>
-        <form action="#" method="POST">
-            <div class="input-container">
-                <input type="text" id="username" name="username" placeholder="Email" required>
-            </div>
-            <div class="input-container">
-                <input type="password" id="password" name="password" placeholder="Password" required>
-            </div>
-            <label for="remember-check">
-                <input type="checkbox" id="remember-check">로그인 상태 유지
-            </label>
-            <button type="submit">로그인</button>
-        </form>
+        <div class="g">
+            <form action="#" method="POST">
+                <div class="input-container">
+                    <input type="text" id="username" name="username" placeholder="Email" required>
+                </div>
+                <div class="input-container">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                <label for="remember-check">
+                    <input type="checkbox" id="remember-check">로그인 상태 유지
+                </label>
+                <button type="submit">로그인</button>
+                <button id="sign" type="submit" onclick="location.href='policy.html'">회원가입</button>
+            </form>
+        </div>
     </div>
 
     <footer>
