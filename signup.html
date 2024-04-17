@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>홀드락</title>
     <link rel="stylesheet" href="./css/login.css">
+    <script type="text/javascript" src="./js/check.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
@@ -26,22 +27,25 @@
 
     <div class="login-container">
         <h2>회원가입</h2>
-        <form action="#" method="POST">
-            <div class="input-container">
-                <input type="text" id="userid" name="userid" placeholder="이메일" required/>
-            </div>
-            <div class="input-container">
-                <input type="password" id="password" name="password" placeholder="Password" required/>
-            </div>
-            <div class="input-container">
-                <input type="password" id="pwCheck" name="passwordCheck" placeholder="비밀번호확인" required/>
-            </div>
-            <div class="input-container">
-                <input type="text" id="username" name="username" placeholder="이름" required/>
-            </div>
-            <button type="submit" onclick="window.alert('가입완료되었습니다!')">가입하기</button>
-        
-        </form>
+        <div class="g">
+            <form action="#" method="POST">
+                <div class="input-container">
+                    <input type="text" id="userid" name="userid" placeholder="이메일" required>
+                </div>
+                <div class="input-container">
+                    <input type="password" id="password" name="password" placeholder="비밀번호" required />
+                </div>
+                <div class="input-container">
+                    <input type="password" id="pwCheck" name="passwordCheck" placeholder="비밀번호확인" onchange="checkpwd()" />
+                </div>
+                <div class="input-container">
+                    <input type="text" id="username" name="username" placeholder="이름" required />
+                </div>
+                <button type="submit" onclick="window.alert('가입완료되었습니다!')">가입하기</button>
+
+            </form>
+        </div>
+
     </div>
 
 

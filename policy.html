@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>홀드락</title>
     <link rel="stylesheet" href="./css/login.css">
+    <script type="text/javascript" src="./js/check.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
@@ -17,7 +18,7 @@
             <nav>
                 <ul>
                     <li><a href="index.html">홈</a></li>
-                    <li><a href="login.html">스토어</a></li>
+                    <li><a href="#">스토어</a></li>
                     <li><a href="#">커뮤니티</a></li>
                     <li><a href="policy.html">가이드</a></li>
                     <li><a href="login.html">로그인</a></li>
@@ -30,7 +31,7 @@
             <h3>회원가입을 위해 필수 약관 동의가 필요합니다.</h3>
             <div class="checks">
                 <label for="all-check">
-                    <input type="checkbox" id="all-check">전체 동의
+                    <input type="checkbox" id="all-check" onclick="checkall(this)">전체 동의
                 </label>
                 <p>이용약관</p>
                 <textarea id="textarea" name="useterms">긴 약관들이 적혀있을 예정!
@@ -45,7 +46,7 @@
                 긴 약관들이 적혀있을 예정!
             </textarea>
                 <label for="use-check">
-                    <input type="checkbox" id="use-check">이용약관에 동의합니다.
+                    <input type="checkbox" id="use-check" class="chk">이용약관에 동의합니다.
                 </label>
                 <p>개인정보 수집 및 이용동의</p>
                 <textarea id="textarea" name="useterms">
@@ -61,18 +62,18 @@
                 긴 약관들이 적혀있을 예정!
             </textarea>
                 <label for="privacy-check">
-                    <input type="checkbox" id="privacy-check">개인정보 수집 및 이용에 동의합니다.
+                    <input type="checkbox" id="privacy-check"  class="chk">개인정보 수집 및 이용에 동의합니다.
                 </label>
 
                 <div class="signbtn">
                     <button id="cancel" type="submit" onclick="location.href='login.html'">취소</button>
-                    <button type="submit" onclick="location.href='signup.html'">회원가입</button>
+                    <button type="submit" onclick="checkagree()">회원가입</button>
                 </div>
             </div>
         </div>
     </div>
 
-
+ 
     <footer>
         <p>&copy; 2024 홀드락. All rights reserved.</p>
     </footer>
