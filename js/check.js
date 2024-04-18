@@ -48,7 +48,7 @@ function signup() {
       pwCheckField.focus();
     } else {
       // 테두리 색상 초기화
-      pwCheckField.style.borderColor = 'gray';
+      // pwCheckField.style.borderColor = 'gray';
       
       window.alert('가입완료되었습니다!');
       location.href = 'login.html';
