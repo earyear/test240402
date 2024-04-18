@@ -41,7 +41,7 @@ function signup() {
 
   var pwCheckField = document.getElementsByName('pwCheck');
 
-  if (box1 !== "" && box2 !== "" && box3 !== "" && box4 !== "") {
+  if (box1 != "" && box2 != "" && box3 != "" && box4 != "") {
     if (box2 !== box3) {
       window.alert('비밀번호가 일치하지 않습니다. 다시 입력해주세요');
       pwCheckField.style.borderColor = 'red';
