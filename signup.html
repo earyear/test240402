@@ -17,7 +17,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">홈</a></li>
-                <li><a href="signup.html">스토어</a></li>
+                <li><a href="#">스토어</a></li>
                 <li><a href="#">커뮤니티</a></li>
                 <li><a href="#">가이드</a></li>
                 <li><a href="login.html">로그인</a></li>
@@ -28,7 +28,7 @@
     <div class="login-container">
         <h2>회원가입</h2>
         <div class="g">
-            <form action="#" method="POST">
+            <form action="login.html" method="POST">
                 <div class="input-container">
                     <input type="text" id="userid" name="userid" placeholder="이메일" required>
                 </div>
@@ -36,14 +36,16 @@
                     <input type="password" id="password" name="password" placeholder="비밀번호" required />
                 </div>
                 <div class="input-container">
-                    <input type="password" id="pwCheck" name="passwordCheck" placeholder="비밀번호확인" onchange="checkpwd()" />
+                    <input type="password" id="pwCheck" name="pwCheck" placeholder="비밀번호 확인"
+                        onchange="checkpwd()" />
                 </div>
                 <div class="input-container">
                     <input type="text" id="username" name="username" placeholder="이름" required />
                 </div>
-                <button type="submit" onclick="window.alert('가입완료되었습니다!')">가입하기</button>
+                <button type="submit" onclick="signup()">가입하기</button>
 
             </form>
+            <input type="button" onclick="navigateTo('login.html')" value="로그인페이지이동버튼">
         </div>
 
     </div>
@@ -51,7 +53,15 @@
 
 
     <footer>
-        <p>&copy; 2024 홀드락. All rights reserved.</p>
+        <nav>
+            <a href="#" target="_blank">개인정보보호방침</a> |
+            <a href="#" target="_blank">이용약관</a>
+          </nav>
+          <p>
+            <span>사업자번호 : 123-45-67890</span> <br>
+            <span>이메일 : earkite.n@gmail.com</span> <br>
+            <span>&copy; 2024 홀드락. All rights reserved.</span>
+          </p>
     </footer>
 </body>
 
